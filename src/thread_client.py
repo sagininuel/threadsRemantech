@@ -42,8 +42,8 @@ def main():
             print(f"\n ---Incoming message from server for ID:{ID} --- ")
             print(f"Answer = {answer}  <rounded to 3dp>\nClient ID: {ID} \n")
             
-            file = open("/results/")
-            file = open("result_"+ID+".txt","a") # To append to the text file replace "w" with "a"
+            #file = open("./results/")
+            file = open("./results/result_"+ID+".txt","a") # To append to the text file replace "w" with "a"
             # file.write("Solution to: ")
             # file.write(inputString)
             # file.write(" is -> ")
@@ -52,7 +52,7 @@ def main():
             file.close()
 
 
-            f = open("result_"+ID+".txt","r")
+            f = open("./results/result_"+ID+".txt","r")
             print("\nThe answer '"+answer+"' was stored in the 'result_"+ID+".txt' file\n")
 
 
